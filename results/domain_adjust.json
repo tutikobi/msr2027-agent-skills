@@ -1,0 +1,61 @@
+{
+  "n": 2989,
+  "domain_share_pct": {
+    "devops_cloud": 11.0,
+    "api_integration": 14.4,
+    "security": 7.7,
+    "data_ml": 13.2,
+    "writing_docs": 17.9,
+    "frontend_ui": 12.9
+  },
+  "domain_share_ai_vs_human_pct": {
+    "devops_cloud": [
+      11.6,
+      11.5
+    ],
+    "api_integration": [
+      15.4,
+      15.8
+    ],
+    "security": [
+      8.2,
+      7.7
+    ],
+    "data_ml": [
+      13.9,
+      12.7
+    ],
+    "writing_docs": [
+      20.0,
+      17.0
+    ],
+    "frontend_ui": [
+      13.9,
+      13.1
+    ]
+  },
+  "M1_length": {
+    "OR": 1.29,
+    "ci95": [
+      1.04,
+      1.62
+    ],
+    "p": 0.0236
+  },
+  "M2_length_domain": {
+    "OR": 1.35,
+    "ci95": [
+      1.07,
+      1.69
+    ],
+    "p": 0.0107
+  },
+  "M3_length_domain_language": {
+    "OR": 1.29,
+    "ci95": [
+      1.03,
+      1.63
+    ],
+    "p": 0.0287
+  }
+}

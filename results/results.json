@@ -1,0 +1,283 @@
+{
+  "N_distinct_skills": 12966,
+  "N_occurrences": 29680,
+  "N_valid_frontmatter": 11291,
+  "RQ1": [
+    {
+      "category": "shell_exec",
+      "distinct": 5132,
+      "pct": 39.6,
+      "pct_valid_fm": 41.3,
+      "occurrences": 12245
+    },
+    {
+      "category": "network",
+      "distinct": 626,
+      "pct": 4.8,
+      "pct_valid_fm": 5.0,
+      "occurrences": 1938
+    },
+    {
+      "category": "remote_code_exec",
+      "distinct": 83,
+      "pct": 0.6,
+      "pct_valid_fm": 0.7,
+      "occurrences": 186
+    },
+    {
+      "category": "destructive",
+      "distinct": 202,
+      "pct": 1.6,
+      "pct_valid_fm": 1.6,
+      "occurrences": 815
+    },
+    {
+      "category": "privilege",
+      "distinct": 215,
+      "pct": 1.7,
+      "pct_valid_fm": 1.7,
+      "occurrences": 1139
+    },
+    {
+      "category": "secrets",
+      "distinct": 1094,
+      "pct": 8.4,
+      "pct_valid_fm": 8.8,
+      "occurrences": 3089
+    },
+    {
+      "category": "confirmation_bypass",
+      "distinct": 33,
+      "pct": 0.3,
+      "pct_valid_fm": 0.3,
+      "occurrences": 141
+    },
+    {
+      "category": "injection_phrase",
+      "distinct": 19,
+      "pct": 0.1,
+      "pct_valid_fm": 0.2,
+      "occurrences": 31
+    }
+  ],
+  "RQ1_any_risky": [
+    1748,
+    13.5
+  ],
+  "RQ1_n_categories_dist": {
+    "0": 11218,
+    "1": 1331,
+    "2": 340,
+    "3": 68,
+    "4": 7,
+    "5": 2
+  },
+  "RQ1_fixture_context": {
+    "n": 205,
+    "pct": 1.6,
+    "risky_pct_fixture": 17.6,
+    "risky_pct_operational": 13.4,
+    "rce_fixture": 1,
+    "rce_total": 83,
+    "inj_fixture": 4,
+    "inj_total": 19,
+    "per_category_operational_pct": {
+      "shell_exec": 39.64,
+      "network": 4.82,
+      "remote_code_exec": 0.64,
+      "destructive": 1.57,
+      "privilege": 1.63,
+      "secrets": 8.42,
+      "confirmation_bypass": 0.26,
+      "injection_phrase": 0.12
+    }
+  },
+  "RQ1_by_location": {
+    "canonical": {
+      "count": 1743,
+      "mean": 0.147
+    },
+    "other": {
+      "count": 3820,
+      "mean": 0.15
+    },
+    "skills-dir": {
+      "count": 7403,
+      "mean": 0.124
+    }
+  },
+  "RQ2_ships_scripts": [
+    1385,
+    10.7
+  ],
+  "RQ2_scripts_files": 8354,
+  "RQ2_scripts_with_text": 5271,
+  "RQ2_ext": {
+    ".py": 4261,
+    ".js": 963,
+    ".ts": 930,
+    ".sh": 915,
+    ".go": 668,
+    ".mjs": 414,
+    ".ps1": 116,
+    ".cjs": 86
+  },
+  "RQ2": [
+    {
+      "category": "proc_exec",
+      "skills": 323,
+      "pct_of_script_skills": 23.3,
+      "files": 578
+    },
+    {
+      "category": "network",
+      "skills": 374,
+      "pct_of_script_skills": 27.0,
+      "files": 634
+    },
+    {
+      "category": "dynamic_code",
+      "skills": 37,
+      "pct_of_script_skills": 2.7,
+      "files": 50
+    },
+    {
+      "category": "secrets",
+      "skills": 139,
+      "pct_of_script_skills": 10.0,
+      "files": 223
+    },
+    {
+      "category": "destructive_fs",
+      "skills": 104,
+      "pct_of_script_skills": 7.5,
+      "files": 142
+    },
+    {
+      "category": "obfuscation",
+      "skills": 4,
+      "pct_of_script_skills": 0.3,
+      "files": 4
+    }
+  ],
+  "RQ2_any_risky_script": [
+    658,
+    47.5
+  ],
+  "RQ2_script_mentioned_in_skillmd_pct": 72.1,
+  "RQ2_risky_undisclosed": [
+    154,
+    23.4
+  ],
+  "RQ3_copies": {
+    "any_risky_instr": {
+      "n_true": 1748,
+      "mean_copies_true": 3.03,
+      "mean_copies_false": 2.17,
+      "pct_copied_true": 31.1,
+      "pct_copied_false": 25.2,
+      "p": 2.29e-08,
+      "cliffs_delta": 0.064
+    },
+    "ships_scripts": {
+      "n_true": 1385,
+      "mean_copies_true": 2.25,
+      "mean_copies_false": 2.29,
+      "pct_copied_true": 19.8,
+      "pct_copied_false": 26.7,
+      "p": 1.27e-07,
+      "cliffs_delta": -0.067
+    },
+    "any_risky_script": {
+      "n_true": 658,
+      "mean_copies_true": 2.36,
+      "mean_copies_false": 2.29,
+      "pct_copied_true": 20.1,
+      "pct_copied_false": 26.3,
+      "p": 0.000606,
+      "cliffs_delta": -0.061
+    },
+    "i_network": {
+      "n_true": 626,
+      "mean_copies_true": 3.1,
+      "mean_copies_false": 2.25,
+      "pct_copied_true": 30.0,
+      "pct_copied_false": 25.8,
+      "p": 0.00861,
+      "cliffs_delta": 0.048
+    },
+    "i_remote_code_exec": {
+      "n_true": 83,
+      "mean_copies_true": 2.24,
+      "mean_copies_false": 2.29,
+      "pct_copied_true": 34.9,
+      "pct_copied_false": 25.9,
+      "p": 0.0448,
+      "cliffs_delta": 0.098
+    },
+    "i_destructive": {
+      "n_true": 202,
+      "mean_copies_true": 4.03,
+      "mean_copies_false": 2.26,
+      "pct_copied_true": 33.7,
+      "pct_copied_false": 25.9,
+      "p": 0.00481,
+      "cliffs_delta": 0.089
+    },
+    "i_privilege": {
+      "n_true": 215,
+      "mean_copies_true": 5.3,
+      "mean_copies_false": 2.24,
+      "pct_copied_true": 27.0,
+      "pct_copied_false": 26.0,
+      "p": 0.401,
+      "cliffs_delta": 0.026
+    },
+    "i_secrets": {
+      "n_true": 1094,
+      "mean_copies_true": 2.82,
+      "mean_copies_false": 2.24,
+      "pct_copied_true": 32.4,
+      "pct_copied_false": 25.4,
+      "p": 1.65e-07,
+      "cliffs_delta": 0.074
+    },
+    "i_confirmation_bypass": {
+      "n_true": 33,
+      "mean_copies_true": 4.27,
+      "mean_copies_false": 2.28,
+      "pct_copied_true": 36.4,
+      "pct_copied_false": 26.0,
+      "p": 0.198,
+      "cliffs_delta": 0.1
+    }
+  },
+  "RQ3_top100_any_risky_instr_pct": 27.0,
+  "RQ3_top100_ships_scripts_pct": 14.0,
+  "RQ3_risky_occurrences": 6195,
+  "RQ3_copies_dist": {
+    "count": 12966.0,
+    "mean": 2.29,
+    "std": 6.4,
+    "min": 1.0,
+    "25%": 1.0,
+    "50%": 1.0,
+    "75%": 2.0,
+    "max": 188.0
+  },
+  "RQ3_history_n": 2989,
+  "RQ3_ai_coauthored": [
+    1012,
+    33.9
+  ],
+  "RQ3_ai_vs_risky": {
+    "risky_pct_ai": 15.9,
+    "risky_pct_human": 11.6,
+    "chi2_p": 0.00127
+  },
+  "RQ3_stars_risky_vs_not": {
+    "median_risky": 2.0,
+    "median_other": 1.0,
+    "p": 0.00304
+  }
+}

@@ -1,0 +1,14 @@
+table,category,n,tp,precision
+instruction,confirmation_bypass,15,15,1.0
+instruction,destructive,15,13,0.87
+instruction,injection_phrase,15,3,0.2
+instruction,network,15,15,1.0
+instruction,privilege,15,12,0.8
+instruction,remote_code_exec,15,11,0.73
+instruction,secrets,15,14,0.93
+script,destructive_fs,15,15,1.0
+script,dynamic_code,15,12,0.8
+script,network,15,14,0.93
+script,obfuscation,4,3,0.75
+script,proc_exec,15,13,0.87
+script,secrets,15,15,1.0
